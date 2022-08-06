@@ -13,11 +13,14 @@ def hello_flask():
 
     return "Hello flask"
 
+print("*"*50)
 
 @app.route('/fishweight')
 def get_predicted_weight():
 
     data = request.form
+
+    print("*"*50)
 
     Length1 = eval(data['Length1'])
     Length2 = eval(data['Length2'])
